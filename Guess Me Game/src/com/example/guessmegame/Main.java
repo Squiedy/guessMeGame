@@ -4,6 +4,8 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
+    private int a = 0;
+
     public static void main(String[] args) {
         System.out.println("Welcome to Wonderland");
         System.out.println("May I have your name?");
@@ -49,15 +51,15 @@ public class Main {
                     userInput = scanner.nextInt();
                 }
 
-            }else{
-                shouldFinish=true;
+            } else {
+                shouldFinish = true;
             }
         }
-        if(hasWon){
-            System.out.println("Congratulations..! You have guessed in your "+timeTried+" guess.");
-        }else{
+        if (hasWon) {
+            System.out.println("Congratulations..! You have guessed in your " + timeTried + " guess.");
+        } else {
             System.out.println("Game Over");
-            System.out.println("The number was "+x);
+            System.out.println("The number was " + x);
         }
     }
 }
